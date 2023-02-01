@@ -92,7 +92,7 @@ Je dois ensuite représenter les données dans un graphique. J'utilise **gensim_
 
 ![](https://github.com/Sophana63/Brief_19-En_route_vers_ChatGPT2/blob/master/04-LDA/lda.jpg)
 
-Et pour finir, je vais éditer un texte de mon choix. Je devrais identifier le nombre de sujets associé mon nouveau texte.
+Et pour finir, je vais éditer un texte de mon choix. Je devrais identifier le nombre de sujets associé à mon nouveau texte.
 
 ### Exercice 5
 
