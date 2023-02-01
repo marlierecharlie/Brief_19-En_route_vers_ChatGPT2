@@ -1,4 +1,4 @@
-# Brief_19-En_route_vers_ChatGPT2
+# Brief 19 - En route vers ChatGPT2
 
 ## Contexte du projet
 
@@ -8,7 +8,7 @@ Pour cela vous allez relever plusieurs challenges.
 
 Après une phase extrêmement sélective, il ne reste plus que 16 candidats prétendant au titre de Champion avec un récompense de plus de 250 000 $ à la clé. Il intégrera la team OpenAI
 
-## Logiciels utilisés
+## Logiciels et librairies utilisés
 
 Les briefs seront codés avec le langage Python avec l'outil de travail Jupyter Notebook. Plusieurs **librairies de base** vont être utilisées : pandas, numpy et sklearn. Mais pour ce brief, des librairies spécifiques devront être importées : **NLTK, gensim, pyLDAvis et Azure**.
 
@@ -32,6 +32,9 @@ pip install azure-cognitiveservices-language-luis
 pip install azure-cognitiveservices-language-textanalytics
 ```
 
+## Explications
+
+Pour répondre au brief, je commence par filtrer le texte d'une base de données convertie en dataframe. Voici une fonction qui permet de le faire rapidement:
 
 ``` python
 def clean_text(df_column):
@@ -48,3 +51,15 @@ def clean_text(df_column):
     
     return clean_text
  ```
+
+### Exercice 2
+Pour cet exercice, je vais créer un modèle Multinomial Naive Bayes formé sur une représentation Bag-of-Word (sac de mots) des textes afin d'effectuer une analyse de sentiment.
+
+- La première étape consiste à utiliser la fonction CountVectorizer pour convertir les données textuelles en une matrice de termes de fréquences (BOW, bag of words) qui peut être utilisée pour entraîner un modèle.
+- Ensuite, un objet du classificateur Bayes naïf multinomial est créé et entraîné sur les données BOW et les étiquettes cibles.
+- Enfin, la fonction cross_val_score est utilisée pour évaluer la performance du modèle en utilisant la validation croisée avec 5 plis. Les scores obtenus sont affichés, ainsi que la moyenne de la précision validée.
+
+Je vais maintenant utiliser des n-grammes de longueur 2 (bigrammes) pour représenter les données textuelles.
+
+    Les bigrammes sont des paires consécutives de mots dans le texte. La représentation BOW sera basée  
+    sur le nombre d'occurrences de chaque bigramme dans les données textuelles.
