@@ -63,3 +63,20 @@ Je vais maintenant utiliser des n-grammes de longueur 2 (bigrammes) pour représ
 
     Les bigrammes sont des paires consécutives de mots dans le texte. La représentation BOW sera basée  
     sur le nombre d'occurrences de chaque bigramme dans les données textuelles.
+    
+### Exercice 3    
+
+Cet exercice permet de trouver les meilleurs hyperparamètres pour un classificateur Bayes utilisant la transformation BOW pour représenter les données textuelles. Pour se faire, je vais créer une pipiline (objet de canal) qui comprend 2 étapes:
+
+- la conversion des données textuelles en une représentation BOW 
+- l'entraînement d'un classificateur Bayes sur les données BOW.
+
+Ensuite, j'instancie un dictionnaire qui définit les hyperparamètres qui seront testés dans la recherche sur grille: 
+- la plage de n-grammes utilisée par CountVectorizer 
+- la valeur d'alpha pour le classificateur Bayes.
+
+
+        Alpha est un hyperparamètre utilisé dans le modèle Bayes naïf multinomial pour contrôler l'importance
+        donnée aux mots rares dans les données textuelles. Plus la valeur d'alpha est petite, plus les mots rares
+        auront un impact important sur les prédictions du modèle. À l'inverse, plus la valeur d'alpha est grande,
+        plus les mots rares auront un impact faible et le modèle sera plus tolérant aux mots rares.
