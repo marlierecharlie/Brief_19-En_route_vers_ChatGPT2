@@ -85,5 +85,15 @@ Ensuite, j'instancie un dictionnaire qui définit les hyperparamètres qui seron
 ### Exercice 4
 
 Dans cet exercice, je vais utiliser des données sur des emails non labélisés. Après les avoir filtrées, je vais les entrainer et utiliser le modèle LDA.  
-Pour bien comprendre le modèle LDA (Latent Dirichlet Allocation), je vous invite [à lire ce PDF](https://alberto.bietti.me/files/rapport-lda.pdf)
+Pour bien comprendre le modèle LDA (Latent Dirichlet Allocation), je vous invite [à lire ce PDF](https://alberto.bietti.me/files/rapport-lda.pdf).
 
+Je dois ensuite représenter les données dans un graphique. J'utilise **gensim_models** de la librairie **pyLDAvis** pour la visualisation.
+
+
+![](https://github.com/Sophana63/Brief_19-En_route_vers_ChatGPT2/blob/master/04-LDA/lda.jpg)
+
+Et pour finir, je vais éditer un texte de mon choix. Je devrais identifier le nombre de sujets associé mon nouveau texte.
+
+### Exercice 5
+
+Après avoir télécharger le Notebook, je récupère les clés dans la ressource créée sur Azure par notre formateur pour me connecter à Azure. Ensuite je vérifie les résultats du Notebook par rapport aux 4 premiers exercices.
