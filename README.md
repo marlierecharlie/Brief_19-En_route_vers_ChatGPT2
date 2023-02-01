@@ -76,7 +76,14 @@ Ensuite, j'instancie un dictionnaire qui définit les hyperparamètres qui seron
 - la valeur d'alpha pour le classificateur Bayes.
 
 
-        Alpha est un hyperparamètre utilisé dans le modèle Bayes naïf multinomial pour contrôler l'importance
+        La valeur Alpha est un hyperparamètre utilisé dans le modèle Bayes naïf multinomial pour contrôler l'importance
         donnée aux mots rares dans les données textuelles. Plus la valeur d'alpha est petite, plus les mots rares
         auront un impact important sur les prédictions du modèle. À l'inverse, plus la valeur d'alpha est grande,
         plus les mots rares auront un impact faible et le modèle sera plus tolérant aux mots rares.
+
+
+### Exercice 4
+
+Dans cet exercice, je vais utiliser des données sur des emails non labélisés. Après les avoir filtrées, je vais les entrainer et utiliser le modèle LDA.  
+Pour bien comprendre le modèle LDA (Latent Dirichlet Allocation), je vous invite [à lire ce PDF](https://alberto.bietti.me/files/rapport-lda.pdf)
+
