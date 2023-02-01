@@ -61,7 +61,7 @@ Pour cet exercice, je vais créer un modèle Multinomial Naive Bayes formé sur 
 
 Je vais maintenant utiliser des n-grammes de longueur 2 (bigrammes) pour représenter les données textuelles.
 
-    Les bigrammes sont des paires consécutives de mots dans le texte. La représentation BOW sera basée  
+Les bigrammes sont des paires consécutives de mots dans le texte. La représentation BOW sera basée  
     sur le nombre d'occurrences de chaque bigramme dans les données textuelles.
     
 ### Exercice 3    
@@ -75,12 +75,12 @@ Ensuite, j'instancie un dictionnaire qui définit les hyperparamètres qui seron
 - la plage de n-grammes utilisée par CountVectorizer 
 - la valeur d'alpha pour le classificateur Bayes.
 
-
-        La valeur Alpha est un hyperparamètre utilisé dans le modèle Bayes naïf multinomial pour contrôler l'importance
-        donnée aux mots rares dans les données textuelles. Plus la valeur d'alpha est petite, plus les mots rares
-        auront un impact important sur les prédictions du modèle. À l'inverse, plus la valeur d'alpha est grande,
-        plus les mots rares auront un impact faible et le modèle sera plus tolérant aux mots rares.
-
+```
+La valeur Alpha est un hyperparamètre utilisé dans le modèle Bayes naïf multinomial pour contrôler l'importance
+donnée aux mots rares dans les données textuelles. Plus la valeur d'alpha est petite, plus les mots rares
+auront un impact important sur les prédictions du modèle. À l'inverse, plus la valeur d'alpha est grande,
+plus les mots rares auront un impact faible et le modèle sera plus tolérant aux mots rares.
+```
 
 ### Exercice 4
 
